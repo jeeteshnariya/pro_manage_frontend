@@ -1,23 +1,24 @@
 <!-- Topbar -->
-    <app-topbar></app-topbar>
+<app-topbar></app-topbar>
 <!-- End of Topbar -->
 <div id="wrapper">
     <!-- Sidebar -->
-        <app-sidebar></app-sidebar>
+    <app-sidebar></app-sidebar>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
         <!-- Main Content -->
-        <div id="content">           
+        <div id="content">
             <!-- Begin Page Content -->
             <div class="container-fluid mt-5">
 
                 <!-- Page Heading -->
                 <div>
                     <h1 class="h3 mb-4 text-gray-800 d-inline-block">Dashboard/Student</h1>
-                    <button type="button" class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#addstudent"><i class="fas fa-user-plus"></i> &nbsp;Add Student</button>
-                </div>           
+                    <button type="button" class="btn btn-outline-primary float-right" data-toggle="modal"
+                        data-target="#addstudent"><i class="fas fa-user-plus"></i> &nbsp;Add Student</button>
+                </div>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
@@ -26,7 +27,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <input type="text" id="myInput"  placeholder="Search for names..">                         
+                            <input type="text" id="myInput" placeholder="Search for names..">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
@@ -51,24 +52,18 @@
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr *ngFor= "let card of [1,2,3,4]">
+                                    <tr *ngFor="let card of [1,2,3,4]">
                                         <td scope="row">Mr.Raj Dave</td>
                                         <td>Ms. Kiran Parmar</td>
                                         <td>Restaurant Management System</td>
                                         <td>Laravel</td>
                                         <td>B.C.A</td>
-                                        <td>6</td> 
-                                        <td>                                                     
-                                                <a href="#">
-                                                    <img src="assets/img/Admin/eye-fill.svg"/>
-                                                </a>
-                                                <a href="#">
-                                                    <img src="assets/img/Admin/pencil-fill.svg"/>
-                                                </a>
-                                                <a href="#">
-                                                    <img src="assets/img/Admin/trash-fill.svg"/>
-                                                </a>                             
-                                        </td>          
+                                        <td>6</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Edit</button>
+                                            <button type="button" class="btn btn-danger">Delete</button>
+                                            <button type="button" class="btn btn-outline-secondary">View</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -82,15 +77,7 @@
         </div>
         <!-- End of Main Content -->
 
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
+        <app-footer></app-footer>
 
     </div>
     <!-- End of Content Wrapper -->
