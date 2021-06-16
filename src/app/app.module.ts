@@ -20,6 +20,7 @@ import { OpenproComponent } from './project/openpro/openpro.component';
 import { AddstudentComponent } from './student/addstudent/addstudent.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './parts/footer/footer.component';
+import { EditUserComponent } from './student/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { FooterComponent } from './parts/footer/footer.component';
     OpenproComponent,
     AddstudentComponent,
     FooterComponent,
+    EditUserComponent,
   ],
   imports: [
     BrowserModule,
