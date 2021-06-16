@@ -2,110 +2,145 @@
 <app-topbar></app-topbar>
 <!-- End of Topbar -->
 <div id="wrapper">
-    <!-- Sidebar -->
-    <app-sidebar></app-sidebar>
-    <!-- End of Sidebar -->
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+  <!-- End of Sidebar -->
 
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-        <!-- Main Content -->
-        <div id="content">
-            <!-- Begin Page Content -->
-            <div class="container-fluid mt-5">
-
-                <!-- Page Heading -->
-                <div>
-                    <h1 class="h3 mb-4 text-gray-800 d-inline-block">Dashboard/Student</h1>
-                    <button type="button" class="btn btn-outline-primary float-right" data-toggle="modal"
-                        data-target="#addstudent"><i class="fas fa-user-plus"></i> &nbsp;Add Student</button>
-                </div>
-
-                <!-- DataTales Example -->
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Student</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <input type="text" id="myInput" placeholder="Search for names..">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th>Student Name</th>
-                                        <th>Faculty Name</th>
-                                        <th>Project Name</th>
-                                        <th>Technology</th>
-                                        <th>Course</th>
-                                        <th>Semester</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th>Student Name</th>
-                                        <th>Faculty Name</th>
-                                        <th>Project Name</th>
-                                        <th>Technology</th>
-                                        <th>Course</th>
-                                        <th>Semester</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                    <tr *ngFor="let card of [1,2,3,4]">
-                                        <td scope="row">Mr.Raj Dave</td>
-                                        <td>Ms. Kiran Parmar</td>
-                                        <td>Restaurant Management System</td>
-                                        <td>Laravel</td>
-                                        <td>B.C.A</td>
-                                        <td>6</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary">Edit</button>
-                                            <button type="button" class="btn btn-danger">Delete</button>
-                                            <button type="button" class="btn btn-outline-secondary">View</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.container-fluid -->
-
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+    <!-- Main Content -->
+    <div id="content">
+      <!-- Begin Page Content -->
+      <div class="container-fluid mt-5">
+        <!-- Page Heading -->
+        <div>
+          <span class="h6 mb-4 text-gray-600 d-inline-block"
+            >Dashboard / Student</span
+          >
+          <button
+            type="button"
+            class="btn btn-outline-primary float-right"
+            data-toggle="modal"
+            data-target="#addstudent"
+          >
+            <i class="fas fa-user-plus"></i> &nbsp;Add Student
+          </button>
         </div>
-        <!-- End of Main Content -->
 
-        <app-footer></app-footer>
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h4 class="m-0 font-weight-bold">Student</h4>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3 offset-md-9">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search for names.."
+                  />
+                </div>
+              </div>
 
+              <div class="col-md-12">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Student Name</th>
+                      <th>Faculty Name</th>
+                      <th>Project Name</th>
+                      <th>Technology</th>
+                      <th>Course</th>
+                      <th>Semester</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Student Name</th>
+                      <th>Faculty Name</th>
+                      <th>Project Name</th>
+                      <th>Technology</th>
+                      <th>Course</th>
+                      <th>Semester</th>
+                      <th>Action</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr *ngFor="let card of [1, 2, 3, 4]">
+                      <td scope="row">Mr.Raj Dave</td>
+                      <td>Ms. Kiran Parmar</td>
+                      <td>Restaurant Management System</td>
+                      <td>Laravel</td>
+                      <td>B.C.A</td>
+                      <td>6</td>
+                      <td>
+                        <button type="button" class="btn btn-primary">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                          Delete
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary">
+                          View
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- End of Main Content -->
 
+    <app-footer></app-footer>
+  </div>
+  <!-- End of Content Wrapper -->
 </div>
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+  <i class="fas fa-angle-up"></i>
 </a>
 
 <!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
-            </div>
-        </div>
+<div
+  class="modal fade"
+  id="logoutModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+        <button
+          class="close"
+          type="button"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Select "Logout" below if you are ready to end your current session.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">
+          Cancel
+        </button>
+        <a class="btn btn-primary" href="login.html">Logout</a>
+      </div>
     </div>
+  </div>
 </div>
