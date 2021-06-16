@@ -5,11 +5,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarComponent } from './parts/sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { TopbarComponent } from './topbar/topbar.component';
+import { TopbarComponent } from './parts/topbar/topbar.component';
 import { StudentComponent } from './student/student.component';
 import { FacultyComponent } from './faculty/faculty.component';
 import { AddfacultyComponent } from './faculty/addfaculty/addfaculty.component';
@@ -19,7 +19,6 @@ import { AddprojectComponent } from './project/addproject/addproject.component';
 import { OpenproComponent } from './project/openpro/openpro.component';
 import { AddstudentComponent } from './student/addstudent/addstudent.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 
 @NgModule({
   declarations: [
@@ -36,16 +35,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProjectComponent,
     AddprojectComponent,
     OpenproComponent,
-    AddstudentComponent
+    AddstudentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
