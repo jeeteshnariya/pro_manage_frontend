@@ -1,0 +1,141 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <div class="modal fade" id="addstudent" tabindex="-1" aria-labelledby="addstudent" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body col-md-10 offset-md-1">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="firstname">First Name</label>
+                      <input type="text" name="firstname" placeholder="First Name" class="form-control" id="firstname">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="middelname">Middel Name</label>
+                      <input type="text" name="middelname" placeholder="Middel Name" class="form-control" id="middelname">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" name="lastname" placeholder="Last Name" class="form-control" id="lastname">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="address">Address</label>
+                      <textarea class="form-control rounded-0" id="textarea" name="address" type="address" rows="5"></textarea>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <div class="form-group">
+                          <label>Gender</label>
+                          <div class="row ml-1">
+                              <label class="radio-inline"> 
+                                  <input type="radio"  name="gender">Female
+                              </label>
+                              <label class="radio-inline ml-1">
+                                  <input type="radio" name="gender">Male
+                              </label>
+                          </div>
+                      </div>
+                      <div class="row ml-1">
+                          <label for="phonenumber">Phone number</label>
+                          <input type="text" name="phonenumber" placeholder="Phone number" class="form-control" id="phonenumber">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="city">city</label>
+                      <select id="city" class="form-control" name="city">
+                        <option selected>city...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="state">State</label>
+                      <select id="state" class="form-control" name="state">
+                        <option selected>State...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="country">Country</label>
+                      <select id="country" class="form-control" name="country">
+                        <option selected>Country...</option>
+                        <option>...</option>
+                      </select>
+                    </div>                  
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="clgname">College Name</label>
+                        <input type="text" name="clgname" placeholder="College Name" class="form-control" id="clgname">
+                  
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="qualification">Qualification</label>
+                        <select id="qualification"  class="form-control" name="qualification">
+                          <option selected>Qualification...</option>
+                          <option>...</option> 
+                        </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="technology">Technology</label>
+                        <select id="technology" class="form-control" name="tech">
+                          <option selected>Technology...</option>
+                          <option>...</option>
+                        </select>
+                      </div>                  
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="status">Status</label>
+                          <select id="status" class="form-control" name="status">
+                            <option selected>status...</option>
+                            <option>...</option>
+                          </select>
+                                           
+                  </div>
+                  </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="birthdate">Birth Date:</label>
+                      <input type="date" id="birthdate" name="birthdate" class="form-control">   
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label>Avtar</label>  
+                      <div class="custom-file">
+                          <input type="file" class="custom-file-input" name="avtar" id="avtar">
+                          <label class="custom-file-label" for="avtar" aria-describedby="inputGroupFileAddon02">Choose Photo</label>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label>Cover Photo</label>  
+                      <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="coverphoto">
+                          <label class="custom-file-label" for="coverphoto" aria-describedby="inputGroupFileAddon02">Choose Photo</label>
+                      </div>
+                    </div>
+                  </div>                    
+              </form>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary mr-2">Save</button>
+                      <button type="button" class="btn btn-outline-secondary">Cancle</button>
+              </div>
+            </div>
+          </div>
+        </div>            
+      </div>
+  </div>
+</div>

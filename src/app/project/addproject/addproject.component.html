@@ -1,0 +1,68 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="modal fade" id="addproject" tabindex="-1" aria-labelledby="addproject" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body col-md-10 offset-md-1">
+                    <form>
+                        <div class="form-row">
+                            <label for="projectname">Project Name</label>
+                            <input type="text" name="projectname" placeholder="Project Name" class="form-control" id="projectname">
+                        </div>
+                        <div class="form-row">
+                            <label for="studentname">Student Name</label>
+                            <input type="text" name="studentname" placeholder="Student Name" class="form-control" id="studentname">
+                        </div>
+                        <div class="form-row">
+                            <label for="facultyname">Faculty Name</label>
+                            <input type="text" name="facultyname" placeholder="Faculty Name" class="form-control" id="facultyname">
+                        </div>
+                        <div class="form-row">
+                            <label for="technology">Technology</label>
+                            <select id="technology" class="form-control" name="tech">
+                              <option selected>Technology...</option>
+                              <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="startdate">Start Date:</label>
+                                <input type="date" id="startdate" name="startdate" class="form-control">                        
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="enddate">Deadline:</label>
+                                <input type="date" id="deadline" name="enddate" class="form-control">                        
+                            </div>                            
+                        </div>
+                        <div class="form-row">
+                            <label for="desc">Description</label>
+                            <textarea class="form-control rounded-0" id="textarea" name="desc" type="description" rows="5"></textarea>
+                        </div> 
+                        <div class="form-row">
+                            <label for="status">Status</label>
+                            <select id="status"  class="form-control" name="status">
+                              <option selected>Status...</option>
+                              <option>...</option> 
+                            </select>
+                          </div>  
+                        <div class="row justify-content-center mt-2">
+                            <button type="button" class="btn btn-outline-primary mr-2">Save</button>
+                            <button type="button" class="btn btn-outline-secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+                
+              </div>
+            </div>
+          </div> 
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.proimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.complete{
+    background-color:rgba(194, 249, 173, 0.799);
+    color:rgb(94, 246, 33);
+    border-color: rgb(94, 246, 33);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #6e707e;
+        background-color: #fff;
+        //border-color: #dddfeb #dddfeb #fff;
+        border-bottom: 3px solid blue;
+}
+
