@@ -12,9 +12,9 @@ export class StudentComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  editItem() {
+  editItem(data = { type: 'edit' }) {
     const ref = this.modalService.open(EditUserComponent, { centered: true });
-    ref.componentInstance.selectedUser = { name: 'xyz', id: 5 };
+    ref.componentInstance.selectedUser = data;
 
     ref.result.then(
       (yes) => {

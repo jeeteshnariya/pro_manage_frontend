@@ -1,5 +1,10 @@
 <div class="modal-header bg-primary text-white">
-  <h4 class="modal-title" id="modal-basic-title">Update User</h4>
+  <span *ngIf="type == 'add'; else modeuser">
+    <h4 class="modal-title" id="modal-basic-title">Add User</h4>
+  </span>
+  <ng-template #modeuser>
+    <h4 class="modal-title" id="modal-basic-title">Update User</h4>
+  </ng-template>
 </div>
 <div class="modal-body">
   <form [formGroup]="editForm" (ngSubmit)="onSubmit()" *ngIf="editForm">

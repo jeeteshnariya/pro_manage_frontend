@@ -13,6 +13,7 @@ export class EditUserComponent implements OnInit {
   selectedUser: any;
   editForm: FormGroup;
   isLoading = false;
+  type;
   constructor(
     public modal: NgbActiveModal,
     // private usersService: UsersServiceService,
@@ -20,6 +21,7 @@ export class EditUserComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.type = this.selectedUser.type;
     this.setForm();
   }
 
