@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +19,9 @@ import { AddprojectComponent } from './project/addproject/addproject.component';
 import { OpenproComponent } from './project/openpro/openpro.component';
 import { AddstudentComponent } from './student/addstudent/addstudent.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UserStoreService } from './services/user-store.service';
+import { UserService } from './services/user.service';
+import { ProfileService } from './services/profile.service';
 
 
 @NgModule({
@@ -43,9 +46,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    UserStoreService,
+    UserService,
+    ProfileService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
