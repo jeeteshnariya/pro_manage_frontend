@@ -8,18 +8,24 @@ import { ProjectComponent } from './project/project.component';
 import { RegisterComponent } from './register/register.component';
 import { SettingComponent } from './setting/setting.component';
 import { StudentComponent } from './student/student.component';
-
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login' , pathMatch: 'full'},
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
-  {path:'dashboard', component:DashboardComponent},
-  {path:'faculty', component:FacultyComponent},
-  {path: 'setting', component:SettingComponent},
-  {path: 'student', component:StudentComponent},
-  {path:'project', component:ProjectComponent},
-  {path: 'project/view', component:OpenproComponent}
+  {path:'dashboard', component:DashboardComponent,
+  canActivate: [AuthGuard]},
+  {path:'faculty', component:FacultyComponent,
+  canActivate: [AuthGuard]},
+  {path: 'setting', component:SettingComponent ,
+  canActivate: [AuthGuard]},
+  {path: 'student', component:StudentComponent ,
+  canActivate: [AuthGuard]},
+  {path:'project', component:ProjectComponent ,
+  canActivate: [AuthGuard]},
+  {path: 'project/view', component:OpenproComponent ,
+  canActivate: [AuthGuard]}
   
 ];
 

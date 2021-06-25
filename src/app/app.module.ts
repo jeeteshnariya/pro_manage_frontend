@@ -19,15 +19,13 @@ import { AddprojectComponent } from './project/addproject/addproject.component';
 import { OpenproComponent } from './project/openpro/openpro.component';
 import { AddstudentComponent } from './student/addstudent/addstudent.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-<<<<<<< HEAD
 import { UserStoreService } from './services/user-store.service';
 import { UserService } from './services/user.service';
 import { ProfileService } from './services/profile.service';
-
-=======
 import { FooterComponent } from './parts/footer/footer.component';
 import { EditUserComponent } from './student/edit-user/edit-user.component';
->>>>>>> a2244838cc8481e331902db8d47e933cf1124a65
+import { AuthGuard } from './guards/auth.guard';
+
 
 @NgModule({
   declarations: [
@@ -53,21 +51,15 @@ import { EditUserComponent } from './student/edit-user/edit-user.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-<<<<<<< HEAD
     FormsModule,
     NgbModule
   ],
   providers: [
     UserStoreService,
     UserService,
-    ProfileService
+    ProfileService,
+    AuthGuard,
   ],
   bootstrap: [AppComponent]
-=======
-    NgbModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
->>>>>>> a2244838cc8481e331902db8d47e933cf1124a65
 })
 export class AppModule {}
